@@ -1,0 +1,29 @@
+<script>
+$(function(){
+
+	function initTicker(id, options) { 
+		$ul = $('<div id="'+id.replace('#','')+'" style="color: #efefef;font-family: Arial, sans-serif;padding:0px;margin-left:10px;margin-right:10px"><ul><li>On Time Delivery:<span style="color:#FDDD36">99%</span></li><li>Quality (PPM): <span style="color:#FDDD36">23,125</span></li><li>Foundry Scrap:<span style="color:#FDDD36">4.59%</span></li><li>Machine Scrap<span style="color:#FDDD36">0.77%</span></li></ul></div>');
+		$("#scrollers").append($ul);
+
+		var $scroller = $(id);
+		$scroller.vTicker('init', options);
+		
+		
+		
+	}
+	
+
+	initTicker('#scroller2', {});
+	
+	
+});
+</script>
+<div class="tickerwrapper">
+<div class="charticon"><img src="/images/statsicon.png" width="30" height="30"></div><div class="tickermonth"></div>
+	<div class="tickermarquee">
+<div id="scrollers">
+</div>
+</div>
+</div>
+	</div>
+
